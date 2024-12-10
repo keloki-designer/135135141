@@ -17,7 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from task2.views import fun, class_fun
-from task3.views import home, moto, auto
+# from task3.views import home, moto, auto
+from task4.views import home, moto, basket
 
 # from django.views.generic import TemplateView
 
@@ -28,5 +29,5 @@ urlpatterns = [
     # path('class/', TemplateView.as_view(template_name='class_page.html'))
     path('', home),
     path('moto/', moto),
-    path('auto/', auto),
+    path('basket/', basket),
 ]
